@@ -1,0 +1,21 @@
+*{
+    font-family:Verdana, DejaVu SansVu, sans-serif;
+}
+
+p{
+    background-color: rgb(255, 192, 203);
+}
+
+#Element2{
+    color:rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+#Element4{
+    background-color: #90ee90;
+    font-weight: bold;
+}
+
+.text24{
+    font-size: 24px;
+}
