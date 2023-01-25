@@ -1,20 +1,10 @@
-/* div>p{
-    background-color: yellow;
-    color:  red;
-    text-align: center;
-    font-size: 20px;
-}div> */
 
-/* div p{
-    background-color: yellow;
-    color:  red;
-    text-align: center;
-    font-size: 20px;
-} */
+.avatar{
+    width: 300px;
+    height: auto;
 
-.container .text{
-    background-color: yellow;
-    color:  red;
-    text-align: center;
-    font-size: 20px;
+}
+.avatar.distorted {
+    width: 200px;
+    height: 400px;
 }
