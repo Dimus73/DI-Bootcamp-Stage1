@@ -1,0 +1,34 @@
+.container{
+	display: flex;
+	height: 500px;
+	border: 2px solid black;
+/*	display: flex-inline;*/
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly; 
+
+}
+
+.imgc{
+	border: 2px solid black;
+	display: flex;
+	width: 200px;
+	height: 100px;
+}
+h1{
+	font-family: fantasy;
+	font-size: 3em;
+	border-bottom: 2px solid pink;
+	border-right: 2px solid pink;
+	width: 400px;
+	text-align: center;
+}
+
+img{
+	width: max-width;
+/*	height: max-height;*/
+	
+/*	object-fit: cover;*/
+	margin: 0 0px;
+	flex-shrink: 0;
+}

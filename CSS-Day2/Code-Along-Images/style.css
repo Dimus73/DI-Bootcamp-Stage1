@@ -1,0 +1,29 @@
+.container{
+	display: flex;
+	height: 500px;
+	border: 2px solid black;
+/*	display: flex-inline;*/
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly; 
+
+}
+
+}
+h1{
+	font-family: fantasy;
+	font-size: 3em;
+	border-bottom: 2px solid pink;
+	border-right: 2px solid pink;
+	width: 400px;
+	text-align: center;
+}
+
+img{
+	width:20%;
+	height: auto;
+/*	200px;*/
+/*	height: 150px;*/
+	margin: 0 10px;
+
+}

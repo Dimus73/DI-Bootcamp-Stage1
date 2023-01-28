@@ -1,0 +1,51 @@
+body{
+    font-family: Helvetica, Geneva, Arial, Verdana, Trebuchet, Univers;
+    
+}
+#wrap{
+    background-color: rgb(54, 67, 117);
+    padding: 0 60px 60px 60px;
+    display:inline-flex;
+    flex-wrap: wrap;
+      
+}
+
+#nav{
+    display: inline-block;
+    background-color: rgb(176, 207, 255);
+    width: 25%;
+    text-align: center;
+
+}
+
+#nav ul{
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+
+}
+
+#content{
+    display: inline-block;
+    background-color: rgb(91, 127, 189);
+    text-align: center;
+    width: 75%;
+}
+
+#content p{
+    padding: 0 30px;
+}
+
+#content ul{
+    list-style-type: none;
+}
+
+.copyright{
+    display: inline-block;
+    position: relative;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 0;
+    width: 70%;
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+/* Selector {
+    Property: value;
+} */
+
+* {
+    text-align: right;
+}
+body {
+    background-image: url(yoko-saito-6T-4_2JmVhw-unsplash.jpg);
+    background-size: cover;
+}
+
+h2+p {
+    Color: #28546C;
+    text-align: center;
+    border: 7px solid RGBa(17, 59, 81, 0.5);
+    cursor: pointer;
+}
+
+p {
+    line-height: 40px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+    font-size: 150%;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+}
+
+#MainText {
+    text-align: left;
+}
+
+img {
+    float: left;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+.webtext:first-child{
+    border: 3px dashed yellow;
+}
+.active {
+    color: red
+}
+
+#div1 {
+    background:rgba(0,0,255,0.2);
+}#div2 {
+    background:rgba(255,0,0,0.2);
+}
