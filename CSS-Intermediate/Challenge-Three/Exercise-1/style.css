@@ -1,0 +1,48 @@
+body{
+    margin: 0 0;
+}
+
+.outline {
+    display: block;
+    border: 2px solid black;
+    margin: 2px;
+
+}
+
+p {
+    display: inline-block;
+    border: 2px solid black;
+
+}
+
+.mock{
+    margin: 0;
+    border-style: none none solid none;
+    width: 100%;
+}
+
+.rectangles p{
+    margin: 2% 1%;
+}
+
+.linew{
+    width: 95%;
+}
+
+.red{
+    background-color: rgb(234, 153, 153);
+    width: 25%;
+    height: 75px;
+}
+
+.blue{
+    background-color: rgb(159, 197, 248);
+    width: 60%;
+    height: 75px;
+}
+
+.yellow{
+    background-color: rgb(225, 229, 152);
+    width: calc(87% + 8px);
+    height: 30px;
+}
