@@ -1,0 +1,37 @@
+body{
+    margin: 0 0;
+}
+.my-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p{
+    border: 2px solid black;
+    margin: 5px;
+    padding: 2px;
+/*    width: 200px;*/
+    font-size: 22px;
+}
+
+
+@media screen and (min-width:765px){
+    .col-4{
+        width: 50%;
+        background-color: yellow;
+    }
+}
+
+@media screen and (min-width:960px){
+    .col-4{
+        width: 33%;
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width:765px){
+    .col-4{
+        width: 100%;
+        background-color: pink;
+    }
+}

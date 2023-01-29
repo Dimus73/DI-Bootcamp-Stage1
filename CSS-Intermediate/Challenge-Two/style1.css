@@ -1,0 +1,16 @@
+@media screen and (max-width: 600px) {
+    div { 
+        border: 2px dotted red;
+        display: inline-block;
+        width: 45%;
+        background-color: aqua;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    p {
+        color: white
+    }
+}
