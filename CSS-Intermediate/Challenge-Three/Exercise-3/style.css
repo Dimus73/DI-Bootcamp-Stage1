@@ -1,0 +1,72 @@
+body{
+    margin: 0 0;
+}
+
+.outline {
+    display: block;
+    border: 2px solid black;
+    margin: 2px;
+
+}
+
+p, img {
+    display: inline-block;
+    border: 2px solid black;
+
+}
+
+.mock{
+    margin: 0;
+    border-style: none none solid none;
+    width: 100%;
+}
+
+.rectangles p, img{
+    margin: 2% 1%;
+/*    height: 100%;*/
+}
+
+.linew{
+    width: 95%;
+}
+
+.sqw, .long, .jpg{
+    width: 28%;
+}
+
+p.small0{
+    width: calc(28% * 3 + 4% + 16px);
+    margin-top: 40px;
+}
+
+.small0{
+
+    background-color: orange;
+    height: 100px;
+
+}
+
+p.sqw, img {
+    height: 200px;
+    margin-bottom: 20px;
+
+}
+img.jpg{
+    border-style: none;
+    width: calc(28% + 4px);
+}
+
+.small1{
+    background-color: green;
+
+}
+
+.small2{
+    background-color: red;
+
+}
+
+.small3{
+    background-color: blue;
+
+}
