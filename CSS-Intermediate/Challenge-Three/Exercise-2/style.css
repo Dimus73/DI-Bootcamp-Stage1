@@ -1,0 +1,65 @@
+body{
+    margin: 0 0;
+}
+
+.outline {
+    display: block;
+    border: 2px solid black;
+    margin: 2px;
+
+}
+
+p {
+    display: inline-block;
+    border: 2px solid black;
+
+}
+
+.mock{
+    margin: 0;
+    border-style: none none solid none;
+    width: 100%;
+}
+
+.rectangles p{
+    margin: 2% 1%;
+/*    height: 100%;*/
+}
+
+.linew{
+    width: 95%;
+}
+
+.sqw, .long{
+    width: 28%;
+}
+
+.small0{
+    width: calc(28% * 3 + 4% + 16px);
+}
+
+.small0{
+    background-color: blue;
+    height: 100px;
+
+}
+
+p.sqw {
+    height: 400px;
+    margin-bottom: 40px;
+
+}
+.small1{
+    background-color: red;
+
+}
+
+.small2{
+    background-color: green;
+
+}
+
+.small3{
+    background-color: orange;
+
+}
