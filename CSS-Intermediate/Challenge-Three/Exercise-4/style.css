@@ -1,0 +1,47 @@
+body{
+    text-align: center;  
+    background-color: rgb(226, 172, 127);  
+}
+div#wrap{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    background-color: rgb(245,245,220);
+    font-family: "JetBrains+Mono", "gotham-rounded", "helvetica neue", helvetica;
+    font-size: 12px;
+    padding: 0px 0px;
+    border: 3px dotted rgb(0,0,0);
+
+}
+
+h1 {
+    font-size: 20px;
+    border: 3px dotted rgb(0,0,0);
+    border-style: none none dotted none;
+    margin: 0px;
+}
+
+ div p{
+    text-align: left;
+}
+
+div p.copyright.copyright {
+    text-align: center;
+    font-size: 10px;
+    margin: 10px 0 5px 0;
+    
+}
+
+ul{
+    /* text-align: center; */
+    list-style-type: none;
+    line-height: 95%;
+    font-style: italic;
+}
+
+li::first-letter{
+    font-size: 15px;
+    font-weight: bold;
+
+}
