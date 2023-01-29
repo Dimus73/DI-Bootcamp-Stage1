@@ -7,6 +7,8 @@ h1 {
 }
 
 .head, 
+.antenna-boby,
+.antenna-top-point,
 .left_arm, 
 .torso, 
 .right_arm, 
@@ -21,7 +23,28 @@ h1 {
     height: 150px; 
     border-radius: 200px 200px 0 0; 
     margin-bottom: 10px;
+    display: flex;
 } 
+
+.antenna{
+    position: relative;
+}
+.antenna-boby{
+    display: flex;
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.antenna-top-point{
+    position:absolute ;
+    width: 20px;
+    height: 20px;
+    top:0;
+    left: 0;
+    border-radius: 0px 10px 10px 0px;
+}
 
 .eyes {
     display: flex;
@@ -109,4 +132,33 @@ h1 {
     position: relative; 
     top: 100px; 
     left: 120px; 
+}
+
+.left-brow, .right-brow{
+    width: 60px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.left-brow{
+    position: relative;
+    top: 75px;
+    left: -20px;
+    rotate: -10deg;
+}
+
+.right-brow{
+    position: relative;
+    top:75px;
+    left: 20px;
+    rotate: -10deg;
+}
+
+.right-brow:hover, .left-brow:hover{
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
 }
