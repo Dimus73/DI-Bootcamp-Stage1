@@ -1,0 +1,597 @@
+/* Setting basic parameters */
+body{
+	margin: 0;
+}
+
+*{
+	margin: 0;
+	font-family: Montserrat;
+
+}
+  
+/*-------- Navigation menu ----------------*/
+/* Large screen menu */
+.top-menu{
+	display: inline-block;
+}
+
+nav.top-menu{
+	position: fixed;
+	display: flex;
+	top: 5%;
+	right:6%;
+	justify-content: space-around;
+}
+
+nav a.top-menu{
+	box-sizing: border-box;
+	margin: 0 10px;
+	padding: 3px 10px 5px 10px;
+	font-size: 12px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(210, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+nav a.top-menu:hover{
+	background-color: rgb(200, 0, 0);
+	transform: scale(1.2);
+}
+
+/* >>>>>> Mobile adaptation <<<<<<< */
+/* Small screen menu (sidebar) */
+.side-menu-button{
+	display: block;
+}
+
+nav.side-menu{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	position: fixed;
+	background-color: black;
+	top: 0;
+	left: 0;
+	/* width: 100%; */
+	height: 100%;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+nav a.side-menu{
+	display: inline-flex;
+	background-color: rgb(173, 37, 19);
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+	font-weight: 700;
+	margin: 10px 30px;
+	padding: 20px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+nav a.cansel{
+	width: 80px;
+}
+
+
+/*-------- Page 01 -----------------*/
+/*Beginning page decoration. Setting the background image*/
+section.page-01{
+	display: block;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("Images/back-ground-01.jpg");
+	background-size: cover;
+
+}
+
+/* Formatting the tag with the name of the hero */
+#herro-name{
+	display: inline-block;
+	position: absolute;
+	bottom: 26%;
+	right:6%;
+	font-size: 8vw;
+	font-weight: 700;
+	color: rgb(165, 30, 22);
+	text-align:right;
+}
+
+/* >>>>>> Mobile adaptation <<<<<<< */
+	/*Hide the hero image from the page. It is needed for the small screen only.*/
+	img.herro-name{
+		display:none;
+	}
+
+/* Additional blank and transparent page. Needed for visual effects. */
+ .page-01-additional{
+	display: inline-block;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+/*-------- Page 02 ----------------*/
+/*Beginning page decoration. Setting the background image*/
+section.page-02{
+	display: inline-block;
+	position: relative;
+	min-height: 800px;
+	background: rgb(8, 20, 20);
+	width: 100%;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+
+/*Describing article properties*/
+article.herro-biography{
+	position: relative;
+	left: 7%;
+	width: 50%;
+	max-width: 600px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+/*Describing article title properties*/
+section.page-02 header{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color: rgb(163 68 60);
+	font-size: 30px;
+}
+
+/*Describing the properties of the article text*/
+article.herro-biography main p {
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+/*Describe the properties of the link to Wik at the end of the article */
+a.article-text-p4{
+	color:red;
+}
+
+/* Describing image properties on the page */
+div.herro-biography{
+	display: inline-block;
+	position: absolute;
+	right: -100px;
+	top: calc((100% - 70vw)/ 2);
+	width: 70vw;
+	height: 70vw;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+img.herro-biography{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+/*-------- Page 03 ----------------*/
+section.page-03{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	/* height: 600px; */
+	background-color: rgb(207 208 210);
+}
+
+/*Describing article properties*/
+article.herro-filmography{
+display: inline-block;
+position: relative;
+left: 7%;
+width: 86%;
+margin: auto 0;
+
+}
+/*Describing article title properties*/
+section.page-03 header{
+	display: block;
+	font-size: 30px;
+	color: rgb(133, 68, 60);
+	margin-top: 50px;
+	/* margin-bottom: 50px; */
+}
+
+/* Describing the properties of the block containing movies */
+main.herro-filmography{
+	position: relative;
+	display:inline-flex;
+	flex-direction: row;
+	justify-content:center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+}
+
+/* Describing properties of a single movie block */
+main.herro-filmography a.movie{
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	transition: all 0.5s;
+}
+/* Block scaling on hover */
+main.herro-filmography a.movie:hover {
+	transform: scale(1.1);
+}
+
+/* Describing properties of the movie cover */
+main.herro-filmography div.cover{
+	display: block;
+	width: 183px;
+	height: 271px;
+	box-shadow: 7px 10px 7px -4px #aaaaaa;
+}
+
+/*Movie image property description*/
+div.cover img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Movie name property description */
+main.herro-filmography div.movie-name{
+	display: inline-block;
+	color: black;
+	font-weight: 700;
+	font-size: 15px;
+	margin-top: 12px;
+	width: 183px;
+}
+
+/* Description of the movie year property */
+main.herro-filmography div.movie-year{
+	display: block;
+	color: black;
+	font-weight: 400;
+	font-size: 12px;
+	text-decoration: none;
+}
+div.movie-year p{
+	text-decoration: none;
+}
+
+/* Page footer property description */
+footer.herro-filmography{
+	color: black;
+	font-size: 12px;
+	margin-bottom: 25px;
+}
+
+
+
+
+/*-------- Page 04 ----------------*/
+section.page-04{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	background-color: rgb(173, 37, 19);
+}
+
+/* Description of the award article property */
+article.herro-avards{
+	display: inline-block;
+	position: relative;
+	left: 7%;
+	width: 86%;
+	margin: auto 0;
+	
+	}
+/*Describing article title properties*/
+article.herro-avards header{
+		display: block;
+		font-size: 30px;
+		color: white;
+		margin-top: 50px;
+		/* margin-bottom: 50px; */
+	}
+
+/* Describing the properties of the block containing avards */
+main.herro-avards{
+	display:inline-flex;
+	flex-direction: row;
+	justify-content:center;
+	flex-wrap: wrap;
+	width: 100%;}
+
+/*Single Reward Block Property Description*/
+main.herro-avards a.avard{
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	/* border: 3px solid black; */
+	transition: all 0.5s;
+}
+/*Hover animation added*/
+main.herro-avards a.avard:hover {
+	transform: scale(1.1);
+}
+
+/*Description of the properties of the award image*/
+div.avard-image img{
+	display: block;
+	width: 240px;
+	height: 240px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+/*Описание таблицы награды*/
+table.avard-date-table{
+	color: white;
+	font-size: 12px;
+	text-decoration: none;
+	margin: 3vw auto;
+}
+/*Description of the properties of the table under the awards*/
+.avard-date-table .movie-name{
+	font-weight: 700;
+	height: 3px;
+}
+.avard-date-table .avard-name{
+	height: 18px;
+}
+.avard-date-table td{
+	vertical-align: top;
+}
+
+/*-------- Footer ----------------*/
+/* Description of site footer properties */
+footer.final-footer{
+	display: inline-flex;
+	position: relative;
+	flex-direction: row;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: white;
+}
+
+/*Picture settings*/
+footer.final-footer img{
+	height: 60px;
+	margin: 10px 50px;
+}
+
+/*Adjusting the corners of a single picture (Inst)*/
+#inst{
+	display: block;
+	border-radius: 16px;
+	overflow: hidden;
+}
+/* Black line. */
+div.black-line{
+	display: inline-flex;
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	justify-content: center;
+	align-items: center;
+}
+
+.black-line form{
+	display: flex;
+	height: 80%;
+	margin: auto 10 px;
+	align-items:stretch;
+}
+
+.black-line p{
+	display: flex;
+	color: white;
+	font-size: 10px;
+}
+
+.black-line p label{
+	align-self: center;
+}
+
+/* -----------General settings for different elements----------- */
+/*Make the first letter larger*/ 
+article.herro-biography p:first-letter,
+ a.top-menu:first-letter,
+ header.herro-filmography p:first-letter,
+ article.herro-avards header:first-letter
+ {
+	font-size: 1.3em;
+}
+
+/* Layer order description */
+.layer-0{
+	z-index: 0;
+}
+
+.layer-1{
+	z-index: 1;
+}
+
+.layer-2{
+	z-index: 2;
+}
+
+/* Remove gaps between sections */
+main.mane-contayner{
+	font-size: 0;
+}
+
+/*Setting the smooth scrolling property*/
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* >>>>>> Adaptation for screen less than 800px px<<<<<<< */
+
+@media screen and (max-width: 800px){
+		
+	/*-------- Page 02 -----------------*/
+	section.page-02{
+		display: inline-flex;
+		flex-wrap: wrap;
+		position: relative;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	/* Article properties */
+	article.herro-biography{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		left: 5%;
+		max-width: initial;
+		width: 90%;
+		color: white;
+		margin-bottom: 20px;
+	}
+
+	/* Article Title Properties */
+	section.page-02 header{
+		margin-top: 50px;
+		margin-bottom: 50px;
+		color: rgb(163 68 60);
+		font-size: 30px;
+	}
+
+	/* Article text properties */
+	article.herro-biography main p {
+		font-size: 12px;
+		margin-top: 15px;
+	}
+
+	/*Link Properties Wik */
+	a.article-text-p4{
+		color:red;
+	}
+
+	/* Hero image properties */
+	div.herro-biography{
+		display: flex;
+		position: relative;
+		/* display: inline-block; */
+		/* position: absolute; */
+		right: 0px;
+		order: -1;
+		/* top: calc((100% - 70vw)/ 2); */
+		width: 100%;
+		border-radius: initial;
+		overflow: hidden;
+	}
+
+	img.herro-biography{
+		display: flex;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+
+	}
+}
+
+/* >>>>>> Adaptation for screen less than 480 px<<<<<<< */
+@media screen and (max-width: 480px) {
+
+	/* Stop showing big menu */
+	nav.full-screen{
+		display: none;
+	}
+	/*-------- Mobile menu  ----------------*/
+	/* Set side menu options */
+	.side-menu-button{
+		display: flex;
+		position: fixed;
+		background-color: rgba(173, 37, 19, 0.5);
+		top: 0;
+		right: 0;
+		margin-right: 10px;
+		margin-top: 10px;
+		width: 75px;
+		height: 75px;
+		border-radius: 10px;
+		font-size: 50px;
+		color: white;
+		justify-content: center;
+	}
+
+	/*-------- Page 01 -----------------*/
+	/* Set the properties of the first page */
+	section.page-01{
+		display: block;
+		position: fixed;
+		top:0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-image:none;
+		background-color:rgb(173, 37, 19);
+		background-size: cover;
+
+	}
+	/* Set photo properties */
+	img.herro-name{
+		display:inline-block;
+		position: relative;
+		width:150%;
+		top:33%;
+		margin: auto;
+	}
+	
+	/* Set properties of the hero's name */
+	#herro-name{
+		display: inline-block;
+		position: absolute;
+		top: 14%;
+		right:6%;
+		font-size: 13vw;
+		font-weight: 700;
+		color: rgb(255, 255, 255);
+		text-align:right;
+	}
+
+	/*-------- Page 03 ----------------*/
+/*Small changes in the block with one movie*/
+main.herro-filmography a.movie{
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	/* border: 3px solid black; */
+	transition: all 0.5s;
+}
+
+	/*-------- Page 04 ----------------*/
+/* Small changes in the block with one avard */
+main.herro-avards a.avard{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	/* border: 3px solid black; */
+	transition: all 0.5s;
+}
+
+}
+
